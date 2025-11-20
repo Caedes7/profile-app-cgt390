@@ -2,9 +2,9 @@ import './App.css';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 
-import Header from './components/Header.jsx';
-import Introduction from './components/Introduction.jsx';
-import ProfileCard from './components/ProfileCard.jsx';
+import Header from './Header.jsx';
+import Introduction from './Introduction.jsx';
+import ProfileCard from './ProfileCard.jsx';
 
 export default function App() {
   // Dynamic data used by JSX
