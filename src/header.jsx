@@ -1,9 +1,17 @@
-export default function Header({ title, tagline, compact = false }) {
-  const headerClass = compact ? 'header header--compact' : 'header';
+export default function Header({ title }) {
   return (
-    <header className={headerClass}>
-      <h1>{title}</h1>
-      {tagline && <p className="tagline">{tagline}</p>}
+    <header className="site-header">
+      <nav className="nav">
+        <ul className="nav__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Profiles</a></li>
+        </ul>
+      </nav>
+
+      <div className="hero">
+        <h1>{title}</h1>
+      </div>
     </header>
   );
 }
