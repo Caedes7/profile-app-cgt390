@@ -26,18 +26,14 @@ export default function App() {
     },
   ];
 
-  const appClass = 'app'; // dynamic className example
-
+  const appClass = 'app'; 
   return (
     <div className={appClass}>
-      {/* Header with navigation */}
       <Header title="Profile App" links={navLinks} />
 
       <main className="main">
-        {/* Introduction / About section */}
         <Introduction title="About" summary={aboutText} />
 
-        {/* Profile cards created with array mapping */}
         <section className="cards">
           {profiles.map((p) => (
             <ProfileCard
