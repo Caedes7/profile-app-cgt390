@@ -72,6 +72,15 @@
 
 /* PROFILE CARDS */
 
+.cards-section {
+  margin-top: 2rem;
+}
+
+.cards-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;

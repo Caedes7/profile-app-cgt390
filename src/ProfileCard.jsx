@@ -1,5 +1,5 @@
-export default function ProfileCard({ name, role, imgSrc, featured = false }) {
-  const cardClass = `card ${featured ? 'card--featured' : ''}`;
+export default function ProfileCard({ name, role, imgSrc }) {
+  const cardClass = 'card';
 
   return (
     <article className={cardClass}>
@@ -12,8 +12,6 @@ export default function ProfileCard({ name, role, imgSrc, featured = false }) {
       <div className="card__body">
         <h3 className="card__title">{name}</h3>
         <p className="card__subtitle">{role}</p>
-
-        {featured && <span className="badge">Featured</span>}
       </div>
     </article>
   );

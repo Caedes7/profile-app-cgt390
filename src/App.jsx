@@ -1,9 +1,12 @@
 import './App.css';
 
-import Header from './Header.jsx';
+import Header from './header.jsx';
 import Introduction from './Introduction.jsx';
 import ProfileCard from './ProfileCard.jsx';
+import CardWrapper from './CardWrapper.jsx';
 import reactLogo from './assets/react.svg';
+import man from './assets/man-art.png';
+import woman from './assets/woman-art.png';
 
 export default function App() {
   const navLinks = ['Home', 'About', 'Profiles'];
@@ -15,36 +18,32 @@ export default function App() {
     {
       name: 'John Doe',
       role: 'Web developer',
-      imgSrc: reactLogo,
-      featured: true,
+      imgSrc: man,
     },
     {
       name: 'Eva Smith',
       role: 'UX designer',
-      imgSrc: reactLogo,
-      featured: false,
+      imgSrc: woman,
     },
   ];
 
-  const appClass = 'app'; 
   return (
-    <div className={appClass}>
+    <div className="app">
       <Header title="Profile App" links={navLinks} />
 
       <main className="main">
         <Introduction title="About" summary={aboutText} />
 
-        <section className="cards">
+        <CardWrapper title="Profiles">
           {profiles.map((p) => (
             <ProfileCard
               key={p.name}
               name={p.name}
               role={p.role}
               imgSrc={p.imgSrc}
-              featured={p.featured}
             />
           ))}
-        </section>
+        </CardWrapper>
       </main>
     </div>
   );
