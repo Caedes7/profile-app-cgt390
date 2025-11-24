@@ -4,7 +4,6 @@ import Header from './Header.jsx';
 import Introduction from './Introduction.jsx';
 import ProfileCard from './ProfileCard.jsx';
 import CardWrapper from './CardWrapper.jsx';
-import reactLogo from './assets/react.svg';
 import man from './assets/man-art.png';
 import woman from './assets/woman-art.png';
 
