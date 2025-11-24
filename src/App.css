@@ -1,5 +1,11 @@
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER / NAV BAR */
+
 .site-header {
-  background: #5c6bc0; /* purple bar */
+  background: #5c6bc0;
   color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -107,6 +113,16 @@
 .card__subtitle {
   font-size: 0.9rem;
   color: #777777;
+}
+
+.badge {
+  margin-top: 0.3rem;
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background-color: #ffca28;
+  color: #333333;
 }
 
 /* Small screens */

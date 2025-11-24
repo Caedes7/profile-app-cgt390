@@ -1,21 +1,19 @@
-export default function ProfileCard({
-  title,
-  subtitle,
-  imgSrc,
-}) {
-  const cls = 'card';
+export default function ProfileCard({ name, role, imgSrc, featured = false }) {
+  const cardClass = `card ${featured ? 'card--featured' : ''}`;
 
   return (
-    <article className={cls}>
+    <article className={cardClass}>
       {imgSrc && (
         <div className="card__media">
-          <img src={assets/man-art.jpg} alt={title} />
+          <img src={imgSrc} alt={name} />
         </div>
       )}
 
       <div className="card__body">
-        <h3 className="card__title">{title}</h3>
-        {subtitle && <p className="card__subtitle">{subtitle}</p>}
+        <h3 className="card__title">{name}</h3>
+        <p className="card__subtitle">{role}</p>
+
+        {featured && <span className="badge">Featured</span>}
       </div>
     </article>
   );
